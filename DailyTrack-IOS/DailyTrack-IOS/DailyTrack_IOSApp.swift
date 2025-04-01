@@ -6,11 +6,15 @@
 //
 
 import SwiftUI
+import ToDoKitKMP
 
 @main
 struct DailyTrack_IOSApp: App {
+    
+    private var rootViewController = UINavigationController()
     var body: some Scene {
         WindowGroup {
+        
             ContentView()
         }
     }

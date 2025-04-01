@@ -1,0 +1,15 @@
+{
+  "originHash" : "390f5d24152ac93f37af729fb856d3103a01a3e3e23f3f93180180360ebe4782",
+  "pins" : [
+    {
+      "identity" : "todokit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MarceloLuiz12/TodoKit.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0667b01bccf3752af6fcfb9d5275831a91e76128"
+      }
+    }
+  ],
+  "version" : 3
+}

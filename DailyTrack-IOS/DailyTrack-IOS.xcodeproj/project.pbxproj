@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5B1B96182D9C3D0A002E3E0B /* ToDoKitKMP in Frameworks */ = {isa = PBXBuildFile; productRef = 5B1B96172D9C3D0A002E3E0B /* ToDoKitKMP */; };
+		5B1FB5102D9C2C1A00E5565A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1FB50F2D9C2C1A00E5565A /* libsqlite3.tbd */; };
+		5B1FB5122D9C2C1F00E5565A /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1FB5112D9C2C1F00E5565A /* libsqlite3.0.tbd */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5B30C7562D9C02C300CBDDB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B1FB50F2D9C2C1A00E5565A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
+		5B1FB5112D9C2C1F00E5565A /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/usr/lib/libsqlite3.0.tbd; sourceTree = DEVELOPER_DIR; };
 		5B30C7442D9C02C200CBDDB3 /* DailyTrack-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DailyTrack-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B30C7552D9C02C300CBDDB3 /* DailyTrack-IOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DailyTrack-IOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B30C75F2D9C02C300CBDDB3 /* DailyTrack-IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DailyTrack-IOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B1FB5122D9C2C1F00E5565A /* libsqlite3.0.tbd in Frameworks */,
+				5B1FB5102D9C2C1A00E5565A /* libsqlite3.tbd in Frameworks */,
+				5B1B96182D9C3D0A002E3E0B /* ToDoKitKMP in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B1FB4FD2D9C18F000E5565A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B1FB5112D9C2C1F00E5565A /* libsqlite3.0.tbd */,
+				5B1FB50F2D9C2C1A00E5565A /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5B30C73B2D9C02C200CBDDB3 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +99,7 @@
 				5B30C7582D9C02C300CBDDB3 /* DailyTrack-IOSTests */,
 				5B30C7622D9C02C300CBDDB3 /* DailyTrack-IOSUITests */,
 				5B30C7452D9C02C200CBDDB3 /* Products */,
+				5B1FB4FD2D9C18F000E5565A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +133,7 @@
 			);
 			name = "DailyTrack-IOS";
 			packageProductDependencies = (
+				5B1B96172D9C3D0A002E3E0B /* ToDoKitKMP */,
 			);
 			productName = "DailyTrack-IOS";
 			productReference = 5B30C7442D9C02C200CBDDB3 /* DailyTrack-IOS.app */;
@@ -195,6 +217,9 @@
 			);
 			mainGroup = 5B30C73B2D9C02C200CBDDB3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5B1B96162D9C3D00002E3E0B /* XCRemoteSwiftPackageReference "TodoKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5B30C7452D9C02C200CBDDB3 /* Products */;
 			projectDirPath = "";
@@ -591,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B1B96162D9C3D00002E3E0B /* XCRemoteSwiftPackageReference "TodoKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MarceloLuiz12/TodoKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B1B96172D9C3D0A002E3E0B /* ToDoKitKMP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B1B96162D9C3D00002E3E0B /* XCRemoteSwiftPackageReference "TodoKit" */;
+			productName = ToDoKitKMP;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5B30C73C2D9C02C200CBDDB3 /* Project object */;
 }
